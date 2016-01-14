@@ -1,5 +1,4 @@
-//We can use java class in Javascript :-
-print("Hello Wolrd from script.js" + java.lang.System.currentTimeMillis());
+print("readJs started :: Current TmeStamp ==" + java.lang.System.currentTimeMillis());
 
 java.lang.System.out.println("Hello through System class of java.");
 
