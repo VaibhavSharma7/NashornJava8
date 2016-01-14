@@ -47,7 +47,7 @@ public class NashornDemo {
         Invocable invocable = (Invocable) engine;
 
         Object dateJs = engine.eval("Date");
-        Object data = invocable.invokeMethod(dateJs, "parse","next thursday");
+        Object data = invocable.invokeMethod(dateJs, "parse", "next thursday");
         System.out.println(" >>>  " + data);
     }
 
