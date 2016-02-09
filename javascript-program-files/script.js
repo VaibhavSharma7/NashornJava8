@@ -13,14 +13,20 @@ var fun1 = function (name) {
     return "greetings from javascript";
 };
 
+var validateAge = function (name, age) {
+    var responseMap;
+    print('Hi there from Javascript, ' + name + ' of age = ' + age);
+    print(Object.prototype.toString.call(name));
+    print(Object.prototype.toString.call(age));
+    if (age >= 18)
+        return {name: 'Vaibhav Sharma', floatingVal: 1.7,age: age, message: name + " of " + age + " is eligible "};
+    else
+        return {name: 'Vaibhav Sharma', floatingVal: 1.7, age: age, message: name + " of " + age + " is  not eligible "};
+};
+
 var fun2 = function (object) {
     print("JS Class Definition: " + Object.prototype.toString.call(object));
 };
-
-function run() {
-    print("Executing Top level run() in js");
-}
-
 
 var MyJavaClass = Java.type('com.my.pack.NashornDemo');
 
